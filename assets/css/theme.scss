@@ -1257,10 +1257,30 @@ color: #464A5F;
 
 .list-inline-item:not(:last-child){margin-right:.9rem}
 
+#vgsearch{
+    color: #8388a6;
+}
+.search{
+    position: relative;
+    .purple-circle{
+        position: absolute;
+        bottom: 20px;
+        width: 50px;
+        height: 50px;
+        right: -30px;
+    
+    }
+    .yellow_shadow{
+        position: absolute;
+        left: -10%;
+        top: 6%;
+    }
+}
+ 
 
 
 
-.firstpage:before{
+.firstpage:before, .searchpage:before{
     background-image: url(/assets/images/line-2-1.png);
     content: "";
     background-repeat: no-repeat;
