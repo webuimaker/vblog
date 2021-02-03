@@ -1,0 +1,36 @@
+---
+layout: default
+title: Home
+---
+
+<!-- Posts Index
+================================================== -->
+<div class="blog-grid">
+    <div class="interior container clearfix">
+        <div class="yellow_shadow" ><img src="{{ site.baseurl }}/assets/images/rectangle-green.png" class="img-fluid" alt=""></div>
+
+        <div class="row"> 
+           
+            {% assign totalPosts = 0 %}
+            {% for post in site.posts %}
+                {% assign totalPosts = totalPosts | plus: 1 %}
+                {% include postbox.html %}
+            {% endfor %}   
+             {% if totalPosts > 5 %}
+                <div id="loadMore" class="mt-5 position-relative ">
+                    <a href="#"  class="btn btn-dark">Load More</a>
+                </div>
+            {% endif%}
+        </div>
+    </div>
+</div>
+
+
+<!-- Pagination
+================================================== -->
+<div class="bottompagination d-none">
+    <span class="navigation" role="navigation">
+        {% include pagination.html %}
+    </span>
+</div>
+

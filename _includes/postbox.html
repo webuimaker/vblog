@@ -1,0 +1,59 @@
+<!-- begin post -->
+{% assign author = site.authors[post.author] %}
+
+<div class=" {% if forloop.index == 1 %} {% if  page.url == '/' %} col-xs-12 col-sm-6 col-md-8 {% else %} col-xs-12 col-sm-6 col-md-4 {% endif %}  {% else %}  col-xs-12 col-sm-6 col-md-4  {%endif%}  blogBox moreBox"  style="display: none;">
+    <div class=" item h-100">
+        <div class="maxthumb">
+            <a href="{{ site.baseurl }}{{ post.url }}">
+                {% if post.image %}
+                    {% if site.lazyimages == "enabled" %}
+                        <img class="img-thumb lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if post.image contains "://" %}{{ post.image }}{% else %}{{ site.baseurl }}/{{ post.image }}{% endif %}" alt="{{ post.title }}">
+                    {% else %}
+                        <img class="img-thumb" src="{% if post.image contains "://" %}{{ post.image }}{% else %}{{ site.baseurl }}/{{ post.image }}{% endif %}" alt="{{ post.title }}"> 
+                    {% endif %}
+
+                {% endif %}
+            </a>
+        </div>
+        
+        <div class="publice bg-white ">
+            <div class="d-flex">
+                <span class="post-date col">{{ post.date | date_to_string }}</span>
+                {% if post.author %}               
+                    <span class="author-meta col">
+                        <span class="post-name"><a target="_blank" href="{{ author.web }}">{{ author.display_name }}</a></span> 
+                    
+                    </span>
+                {% endif %}
+                
+                <div class="clearfix"></div>
+            </div>
+        
+        <div class="d-flex">
+            <div class="post-info">
+                <h2 class="card-title">
+                    <a  href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>             
+                </h2>
+                <!-- <h4 class="card-text">{{ post.excerpt | strip_html | truncatewords:30 }}</h4> -->
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    {% if forloop.index == 9 %}
+    <div class="yellow_dot"><img src="assets/images/star-yellow.png" alt=""></div>
+    {%endif%}
+
+    
+
+    {% if forloop.index == 17 %}
+    <div class="green_dot"><img src="assets/images/polygon.png" alt=""></div>
+    {%endif%}
+</div>
+<!-- end post -->
+{% if forloop.index == 6 %}
+<div class="purple_dot "><img src="assets/images/purple_ring.png" alt=""></div>
+{%endif%}
+
+

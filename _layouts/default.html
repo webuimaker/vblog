@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" class="{% if page.url == '/' %} firstafter {% endif %}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="icon" href="{{ site.baseurl }}/assets/images/Favicon_Village2-01.png">
+
+<title>{{ page.title }} | {{site.name}}</title>
+
+{% seo %}
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    
+<link href="{{ site.baseurl }}/assets/css/prism.css" rel="stylesheet">
+
+<link href="{{ site.baseurl }}/assets/css/theme.css" rel="stylesheet">
+
+{% if page.layout == 'post' %}
+
+
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+{% endif %}
+
+
+
+
+</head>
+
+{% if jekyll.environment == 'production' %}
+<!-- change your GA id in _config.yml -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', '{{site.google_analytics}}', 'auto');
+ga('send', 'pageview');
+</script>
+{% endif %}
+
+{% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
+<body >
+	<!-- defer loading of font and font awesome -->
+	<noscript id="deferred-styles">
+		<link href="https://fonts.googleapis.com/css?family=Sen:400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	</noscript>
+
+    {% include nav-top.html %}
+
+<!-- End Sidebar Navigation
+================================================== -->
+
+
+
+<div class="site-content {% if page.url == '/' %} firstpage {% endif %}  {% if page.url == '/contact' %} rightbg {% endif %}">
+    <!-- <div class="purple_dot"><img src="assets/images/purple_ring.png" alt=""></div> -->
+
+
+<div class="container">
+
+
+    <!-- Site Logo/Name
+    ================================================== -->
+   {% if page.url != '/contact' %}
+    {% include search-form.html %} 
+    {% endif %}
+
+
+
+
+
+    
+   
+    <!-- Site Tag
+    ================================================== -->
+    {% if page.url == '/' %}
+        <p class="sitetag">
+            {{ site.description }}
+        </p>
+    {% endif %}
+
+    <!-- Content
+    ================================================== -->
+    <div class="main-content">
+        
+
+        {{ content }}
+    </div>
+
+    {% if site.mailchimp-list %}
+    <!-- Newsletter
+    ================================================== -->
+
+    {% endif %}
+    
+</div>
+
+<!-- Begin Footer
+================================================== -->
+<footer class="footer">
+    <div class="purple-circle">
+        <img src="{{ site.baseurl }}/assets/images/purple-circle.png" class="img-fluid" alt="">
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 ">
+                <p class="mb-0 copyright text-center text-md-left">{{ site.name }} <span>© {{ site.time | date: "%Y" }} All rights reserved</span>  </p>
+            </div>
+            <div class="col-md-6 text-center text-md-right">
+                <ul class="list-inline sociallinks mb-0">
+                    <li class="list-inline-item">
+                        <a href="mailto:hello@villagechildcare.co">hello@villagechildcare.co </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+   
+</footer>
+<!-- End Footer
+================================================== -->
+<!-- <div class="yellow_dot"><img src="assets/images/star-yellow.png" alt=""></div> -->
+	
+</div> <!-- /.site-content -->
+
+<!-- Scripts (if you need bootstrap.js, please add it yourself. I didn't use it for performance reasons, it was not needed in this theme)
+================================================== -->
+
+<script src="{{ site.baseurl }}/assets/js/jquery.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+
+<script src="{{ site.baseurl }}/assets/js/prism.js"></script>
+
+<script src="{{ site.baseurl }}/assets/js/theme.js"></script>
+
+
+
+<script src="{{site.baseurl}}/assets/js/lunr.min.js"></script>
+<script src="{{site.baseurl}}/assets/js/search.js"></script>
+
+
+
+<script>
+    if ($(window).width() < 991) {
+        $(".nav-link").click(function () {
+            $(".navbar-toggler").trigger("click")
+            $("body").removeClass("menuopen")
+        })
+    }
+
+    $(".navbar-toggler").click(function () {
+        $("body").toggleClass("menuopen")
+    })
+
+    $(".search-icon").click(function () {
+        $(".sm-search").toggleClass("show");
+        $("body").toggleClass("menuopen");
+    })
+
+
+    $(document).ready(function () {
+        $(document).click(function (event) {
+            var clickover = $(event.target);
+            var _opened = $(".navbar-collapse").hasClass("show");
+            if (_opened === true && !clickover.hasClass("collapsed")) {
+                $(".navbar-toggler").click();
+                $("body").removeClass("menuopen")
+            }
+        });
+    });
+
+    $( document ).ready(function () {
+                $(".moreBox").slice(0, 5).show();
+                if ($(".blogBox:hidden").length != 0) {
+                        $("#loadMore").show();
+                }               
+                $("#loadMore").on('click', function (e) {
+                        e.preventDefault();
+                        $(".moreBox:hidden").slice(0, 6).slideDown();
+                        if ($(".moreBox:hidden").length == 0) {
+                                $("#loadMore").fadeOut('slow');
+                        }
+                });
+        });
+
+      $('.article-post table').wrap('<div class="table-responsive"></div>');
+ 
+
+</script>
+
+{% if site.lazyimages == "enabled" %}
+<script src="{{ site.baseurl }}/assets/js/lazyload.js"></script>
+{% endif %}
+
+{% if page.layout == 'post' %}
+<script id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+$('.autoplay').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,           
+    prevArrow: false,
+    nextArrow: false
+  });
+</script>
+{% endif %}
+
+
+
+
+</body>
+</html>
