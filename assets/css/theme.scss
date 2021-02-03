@@ -783,6 +783,16 @@ footer {
             width: 60px;
         }
     }
+    .yellow_dot
+    {
+        position: absolute;
+        right: -25px;
+        top: -30px;
+    }
+}
+
+.ov-x{
+    overflow-x: hidden;
 }
 .copyright span{
     color: #8388a6;
@@ -1276,7 +1286,34 @@ color: #464A5F;
         top: 6%;
     }
 }
+
+.contact-m-t70{
+    margin-top: 70px;
+    .yellow_shadow{
+        position: absolute;
+        left: 0%;
+        top: 200px;
+        img{
+            width: 60px; 
+        }
+    }
+    .green_shadow{
+        position: absolute;
+        right: 14%;
+        top: 50%;
+        img{
+            width: 60px; 
+        }
+    }
+   
+}
  
+.purple_dot.contact-purple{
+    margin-left: -50px;
+    img{
+        width: 60px; 
+    }
+}
 
 
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="{% if page.url == '/' %} firstafter {% endif %}">
+<html lang="en" class="{% if page.url == '/' %} firstafter {% endif %} {% if page.url == '/contact' %} ov-x{% endif %}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -106,6 +106,10 @@ ga('send', 'pageview');
     <div class="purple-circle">
         <img src="{{ site.baseurl }}/assets/images/purple-circle.png" class="img-fluid" alt="">
     </div>
+    {%endif%}
+
+    {% if page.url == '/contact' %}
+        <div class="yellow_dot"><img src="assets/images/star-yellow.png" alt=""></div>
     {%endif%}
 
     <div class="container-fluid">

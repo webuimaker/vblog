@@ -2,10 +2,18 @@
 layout: default
 ---
 
-<div class="page-single">
+<div class="page-single {% if page.url == '/contact' %} contact-m-t70 {%endif%}">
     <div class="entry-header">       
         <h1 class="posttitle">{{ page.title }}</h1>        
     </div>
+    {% if page.url == '/contact' %}
+        <div class="yellow_shadow">
+            <img src="assets/images/triangle@2x.png" alt="">
+        </div>
+
+        <div class="green_shadow"><img src="/assets/images/rectangle-green.png" class="img-fluid" alt=""></div>
+        
+    {%endif%}
 </div>
 
 <!-- Featured Image -->
