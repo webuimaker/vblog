@@ -1621,13 +1621,31 @@ color: #464A5F;
     body, html{
         overflow-x: hidden !important;
     }
-    .firstafter:after, {
-        display: none
+    .firstafter:after {
+        height: 400px;
+        width: 200px;
+        bottom: 222px;
+        display: block;
+        position: absolute;
+        right: 0%;
     }
-    .firstpage:before{
+    .firstpage:before {
         height: 300px;
         width: 300px;
         top: 40vh;
+    }
+    .searchpage:before
+    {
+        height: 300px;
+        width: 250px;
+        top: 62vh;
+    }
+
+    .search .yellow_shadow {
+        left: -10%;
+        top: 3%;
+        width: 60px;
+        height: 60px;
     }
     .interior .purple_dot{
         left:-30px;
@@ -1646,6 +1664,15 @@ color: #464A5F;
         left: -10px;
         right: auto;
         bottom: -20px;
+    }
+    .firstafter .footer .purple-circle{
+        left: auto;
+        right: -20px;
+
+    }
+    .search h1{
+        font-size: 32px;
+        line-height: 1.2em;
     }
 }
 
