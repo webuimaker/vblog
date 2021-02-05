@@ -6,16 +6,20 @@
                     <div class="input-group">
                         <input type="text" id="search_box" name="query" class="form-control" placeholder="Search">
                         <div class="input-group-append">
-                            <button class="btn btn-secondary" type="submit" value="search">
+                            <button class="btn btn-secondary1" type="submit" value="search">
                                 <i class="fa fa-search"></i>
                             </button>
                         </div>
                     </div>
                 </form>
             </div>
+
+            {%if  page.layout != "post" %}
             <div class="yellow_shadow">
                 <img src="{{ site.baseurl }}/assets/images/triangle.png" alt="">
             </div>
+
+            {% endif %}
 
             
         </div>

@@ -1,5 +1,11 @@
-<div class="autoplay my-3">
-  {% for imag in  page.gallery %}
-    <div><img src="{{imag.img | realative_url }}" alt=""></div>
-  {% endfor %}
-  </div>
+<div class="post-slider position-relative">
+  <div class="autoplay my-3">
+    {% for imag in  page.gallery %}
+      <div><img src="{{imag.img | realative_url }}" alt=""></div>
+    {% endfor %}
+  
+    
+    </div>
+    <div class="purple-circle"><img src="/assets/images/purple-circle.png" alt=""></div>
+</div>
+

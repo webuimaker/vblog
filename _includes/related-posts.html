@@ -3,22 +3,29 @@
 <div class="{% unless page.categories == empty %} related-posts {% endunless %}">  
 
     {% unless page.categories == empty %}
-    <h2 class="text-center mb-4">Explore more like this</h2>
+    <h2 class="text-center mb-4 heading">Explore more like this</h2>
     {% endunless %}
     
     <div class="d-flex justify-content-center align-items-center">
     
     <!-- Categories -->
+    <!-- 
     {% assign sortedCategories = page.categories | sort %}
     {% for category in sortedCategories %}
     <a class="smoothscroll badge badge-primary text-capitalize" href="{{site.baseurl}}/categories#{{ category | replace: " ","-" }}">{{ category }}</a>                
     {% endfor %}
 
+    --> 
+
     <!-- Tags -->  
-    {% assign sortedTags = page.tags | sort %}
+    <!-- 
+
+        {% assign sortedTags = page.tags | sort %}
     {% for tag in sortedTags %}                
     <a class="smoothscroll badge badge-primary text-capitalize" href="{{site.baseurl}}/tags#{{ tag | replace: " ","-" }}">{{ tag }}</a>               
     {% endfor %}
+    -->
+    
 
     </div>
 
@@ -54,6 +61,14 @@
         
         {% endfor %}
     </div>
-        </div>        
+        </div>    
+        
+        <div class="yellow_shadow post rect">
+            <img src="/assets/images/rectanle-yellow.png" class="img-fluid" alt="">
+        </div>
+
+        <div class="green_shadow post">
+            <img src="/assets/images/rectangle-green.png" class="img-fluid" alt="">
+        </div>
 </div>
 
