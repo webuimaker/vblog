@@ -1315,6 +1315,7 @@ color: #464A5F;
 }
 #search-results {
     margin-top: 15px;
+    padding: 0px;
 }
 #search-results li{
     list-style: none;
@@ -1546,7 +1547,13 @@ color: #464A5F;
 .blog-grid-container1 .purple_dot {
     width:60px
 }
+.contact-m-t70 .entry-header:after{
+    display: none;
+}
 
+.yellow_shadow.m{
+    display: none;
+}
 
 //responsive tweaks
 @media (min-width: 768px) {
@@ -1578,6 +1585,9 @@ color: #464A5F;
 }
 
 @media (max-width: 767px){
+    body, html{
+        overflow-x: hidden !important;
+    }
     
     .menuopen:before {
         content: "";
@@ -1638,14 +1648,17 @@ color: #464A5F;
     {
         height: 300px;
         width: 250px;
-        top: 62vh;
+        top: 50vh;
     }
 
     .search .yellow_shadow {
-        left: -10%;
+        left: -11%;
         top: 3%;
         width: 60px;
         height: 60px;
+        img{
+            width: 40px;
+        }
     }
     .interior .purple_dot{
         left:-30px;
@@ -1677,7 +1690,249 @@ color: #464A5F;
     .search-form .container{
         display: none;
     }
+
+    
+    .bg-transparent{
+        background: transparent;
+    }
+    .posttitle{
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .entry-featured-image img{
+        height: auto;
+         width: 100%;
+    }
+    .article-post h1{
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .article-post h3
+    {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .article-post h4
+    {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .article-post h5
+    {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 22px;
+        color: #464A5F;
+    }
+    .entry-featured-image::before{
+        width: 80%;
+        height: 110%;
+        right: 0px;
+    }
+    .entry-featured-image .yellow_shadow.post.star{
+        top: -60%;
+        left: -14%;
+    }
+    .entry-featured-image .purple-circle
+    {
+        width: 100px;
+        height: 100px;
+        right: -30px;
+        bottom: -50px;
+        margin: 0px;
+        top: auto;
+    }
+    .entry-header:after
+    {
+        height: 400px;
+        width: 150px;
+        top: 171px;
+    }
+    .green_shadow.post{
+        left: -30px;
+        right: auto;
+        top: 14%;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        
+        img{
+            width: 40px;
+        }
+    }
+    .yellow_shadow.post.rect{
+        width: 60px;
+        height: 60px;
+        top: 25%;
+        right: -30px;
+        img{
+            width: 40px;
+        }
+    }
+    .green_shadow.post.oct{
+        top: 40%;
+    }
+
+    .purple-circle.post.bot{
+        bottom: 4.8%;
+        right: 0px;
+        left: 0px;
+        margin: auto;
+    }
+    .yellow_shadow.post.rect{
+        bottom: 390px  !important;
+        z-index: 1 !important;
+    }
+
+    .yellow_shadow.post.star {
+        position: absolute;
+        top: 64%;
+        right: -9%;
+        width: 80px;
+        img{
+            width: 40px;
+        }
+    }
+    .yellow_shadow.post.left{
+        width: 60px;
+        height: 60px;
+        left: -35px;
+        img{
+            width:40px
+        }
+    }
+
+    .related-posts:before {
+        top: 14px;
+        left: -20%;
+        width: 200px;
+        height: 200px;
+    }
+    .related-posts h2.heading{
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .related-posts .green_shadow.post {
+        left: -10%;
+        top: 400px;
+    }
+    .contact-m-t70 .yellow_shadow{
+        width: 60px;
+        height: 60px;
+        left: -6%;
+        img{
+            width: 40px;
+        }
+    }
+    .article-post .form-group.row .col-md-6{
+        margin-bottom: 15px;
+    }
+    .article-post   .form-group{
+        margin-bottom: 0px;
+    }
+    .contact-m-t70 .green_shadow{
+        right: -2px;
+        bottom: 25%;
+        top: auto;
+        img{
+            width: 35px;
+        }
+    }
+    footer .yellow_dot{
+        position: absolute;
+        right: -15px;
+        top: auto;
+        bottom: 0px;
+        img{
+            width: 40px;
+        }
+    }
+    .purple_dot.contact-purple {
+        margin-left: 100px;
+        position: absolute;
+        bottom: -20%;
+        z-index: 1;
+    }
+
+    .rightbg{
+        background: none !important;
+
+        &:before{
+            background-image: url(/assets/images/line-2-1.png);
+            content: "";
+            background-repeat: no-repeat;
+            background-origin: content-box;
+            background-size: cover;
+            height: 300px;
+            width: 200px;
+            top: auto;
+            display: block;
+            position: absolute;
+            left: auto;
+            z-index: -1;
+            right: 0px;
+            bottom: 0px;
+            margin: auto;
+        }
+    }
+
+    .yellow_shadow.m{
+        display: block;
+        top: 0px;
+        right: -7%;
+        left: auto;
+    }
+
+    .search .purple-circle{
+        bottom: 10%;
+    }
+    .search  .yellow_dot.m{
+        left: -20px;
+        bottom: 25px;
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        img{
+            width: 40px;
+        }
+    }
+    .search-form{margin: 0px;}
+    .srch-form{
+        .search-form{
+            margin: 0px;
+            &.m-search{
+                margin: 0px auto;
+                position: absolute;
+                z-index: 99;
+                width: 101%;
+                padding: 0px;
+                top: 15px;
+                z-index: 999999;
+                left: -5px;
+                .container{
+                    display: block;
+                }
+    
+            }
+        }
+
+    }
+    header{
+        margin-bottom: 90px;
+    }
+
+    .menuopen.srch-form:before{
+        z-index: 99999;
+    }
+
 }
+
+
+
 
 
 
@@ -1756,9 +2011,10 @@ color: #464A5F;
             
             &.heading{
                 font-family: 'Montserrat', sans-serif;
+               
                 font-weight: bold;
-                font-size: 38px;
-                line-height: 46px;
+                font-size: 22px;
+                line-height: 30px;
                 text-align: center;
                 letter-spacing: 1.5px;
 

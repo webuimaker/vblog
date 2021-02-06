@@ -18,7 +18,7 @@ post_class: post-template
     <!-- Author & Date  Box -->
     {% assign author = site.authors[page.author] %}
     {% if page.author %}
-    <div class="d-flex align-items-center mt-4">
+    <div class="d-flex align-items-center mt-4 row">
         <div class="col">
              <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date: "%B %d,%Y" }}</time></span>           
             {% if page.last_modified_at %}
