@@ -1554,6 +1554,9 @@ color: #464A5F;
 .yellow_shadow.m{
     display: none;
 }
+.search-form.m-search{
+    display: none;
+}
 
 //responsive tweaks
 @media (min-width: 768px) {
@@ -1900,6 +1903,10 @@ color: #464A5F;
             width: 40px;
         }
     }
+    
+.search-form.m-search{
+    display: block;
+}
     .search-form{margin: 0px;}
     .srch-form{
         .search-form{
