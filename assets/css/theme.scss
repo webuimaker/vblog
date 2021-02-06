@@ -1593,6 +1593,10 @@ color: #464A5F;
     body, html{
         overflow-x: hidden !important;
     }
+    .copyright-out{
+        order: 2;
+        margin-top: 8px;
+    }
     
     .menuopen:before {
         content: "";
