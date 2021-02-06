@@ -9,7 +9,8 @@ disqus: 'demowebsite'
 mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
 include: ["_pages"]
 permalink: /:title/
-email: 'taylor@joinourvillage.com'
+email: hello@villagechildcare.co
+
 # Authors
 authors:
   Taylor:
@@ -17,7 +18,7 @@ authors:
     display_name: Taylor
     avatar: 'assets/images/taylor_avatar.png'
     email: taylor@joinourvillage.com
-    description: "Taylor live in Austin Texas with his wife and two dogs."
+    description: "Taylor lives in Austin Texas with his wife and two dogs."
   Drew:
     name: Drew Giovannoli
     display_name: Drew    
@@ -27,6 +28,12 @@ authors:
   Rachel:
     name: Rachel Edmonson
     display_name: Rachel Edmonson  
+    avatar: 'assets/images/village_logo_big.png'
+    email: hello@villagechildcare.co
+    description: ""
+  Kristen:
+    name: Kristen Brooks
+    display_name: Kristen Brooks
     avatar: 'assets/images/village_logo_big.png'
     email: hello@villagechildcare.co
     description: ""

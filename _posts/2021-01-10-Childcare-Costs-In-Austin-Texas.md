@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Breaking down childcare costs in Austin, Texas"
+title:  "Breaking Down Childcare Costs in Austin, Texas"
 Description: "Learn about the local costs for nannies, nanny-shares, or daycares in Austin, TX, and what you can expect to get in return for your investment."
 categories: [ Nanny-Share Tips ]
 tags: [Nanny-Share]
@@ -8,7 +8,7 @@ image: assets/images/baby_playing.jpg
 comments: true
 author: Drew
 ---
-# Breaking down childcare costs in Austin, Texas
+# Breaking Down Childcare Costs in Austin, Texas
 
 The cost of childcare can feel like a shock to parents. Whether you're hiring a nanny for your family, organizing a nanny-share, or joining a daycare, childcare becomes the most expensive cost that a new baby brings. [The Center for American Progress reports](https://www.americanprogress.org/issues/early-childhood/reports/2018/11/15/460970/understanding-true-cost-child-care-infants-toddlers/) that 18% of a family’s income is used to cover the cost of child care for an infant, and cost 13% of a family's income for a toddler. This article will cover guidelines for much you can expect to pay for various childcare options, and what you can expect to get in return for your investment
 

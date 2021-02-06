@@ -43,7 +43,7 @@ A common question nanny-share question or concern is which family will host the 
 - It's not your house, and so there's a little less control over the setup and structure
 
 
-{% include post-slider.html  %}
+{% include post-slider.html %}
 
 
 {:.table }
@@ -66,9 +66,4 @@ It's usually just one home, you're not normally switching back and forth because
 
 We hope this was helpful! Let us know if you have any questions and have a great day.
 
-
-
-
-{: .text-center}
-<button type="button" onclick="window.location.href='https://ourvillage.formstack.com/forms/village_main_form';" class="btn btn-dark">Submit Your Childcare Needs</button>
-
+<button type="button" onclick="window.location.href='https://ourvillage.formstack.com/forms/village_main_form';" class="btn btn-primary">Submit Your Childcare Needs</button>
