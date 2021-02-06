@@ -67,10 +67,9 @@ It's usually just one home, you're not normally switching back and forth because
 
 We hope this was helpful! Let us know if you have any questions and have a great day.
 
+
+
+
 {: .text-center}
 <button type="button" onclick="window.location.href='https://ourvillage.formstack.com/forms/village_main_form';" class="btn btn-dark">Submit Your Childcare Needs</button>
 
-
-
-{: .text-center}
-<button type="button" onclick="window.location.href='https://ourvillage.formstack.com/forms/village_main_form';" class="btn btn-secondary">Secondary Button</button>
