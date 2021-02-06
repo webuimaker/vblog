@@ -46,12 +46,6 @@ A common question nanny-share question or concern is which family will host the 
 {% include post-slider.html %}
 
 
-{:.table }
-| Syntax      | Description |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
-
 
 
 
