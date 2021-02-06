@@ -110,6 +110,11 @@ color: #464A5F;
     min-width: 180px;
     border: 0px;
     outline: none !important;
+    &:focus{
+        
+        outline: none !important;
+        box-shadow: none !important;
+    }
 }
 blockquote {
     font-family: Times New Roman;
@@ -1891,10 +1896,7 @@ color: #464A5F;
         }
     }
     .purple_dot.contact-purple {
-        margin-left: 100px;
-        position: absolute;
-        bottom: -35%;
-        z-index: 1;
+        display: none;
     }
 
     .rightbg{
@@ -1980,6 +1982,15 @@ color: #464A5F;
     }
     .navbar-toggler{
         line-height: 1.4em;
+    }
+
+
+    footer .purple_dot.contact-purple{
+        display: block;
+        margin-left: 0px;
+        position: absolute;
+        top: -40px;
+        left: 20%;
     }
 }
 
