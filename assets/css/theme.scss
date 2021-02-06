@@ -1574,7 +1574,14 @@ color: #464A5F;
             background-color: #66B3FF;
         }
     }
-    
+    .slick-slide{
+        margin-right: 20px;
+        img{
+            border-radius: 10px;
+            height: 223px;
+            object-fit: cover;
+        }
+    }
 
 }
 

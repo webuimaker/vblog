@@ -7,12 +7,11 @@ image: assets/images/two-toddlers.jpg
 comments: false
 author: Drew
 gallery: 
-- img: "/assets/images/client/01.png"
-- img: "/assets/images/client/01.png"
-- img: "/assets/images/client/01.png"
-- img: "/assets/images/client/01.png"
-- img: "/assets/images/client/01.png"
-- img: "/assets/images/client/01.png"
+- img: "/assets/images/ScheafferFamily.jpg"
+- img: "/assets/images/MinoliFamily.jpg"
+- img: "/assets/images/BrormanFamily.jpg"
+- img: "/assets/images/two-toddlers.jpg"
+- img: "/assets/images/ellie-giovannoli.jpg"
 ---
 
 A common question nanny-share question or concern is which family will host the nanny-share at their house or apartment? In this post, we're going to examine the pros and cons of hosting a nanny-share at your home vs going to someone else's home
