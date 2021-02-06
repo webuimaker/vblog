@@ -1396,9 +1396,10 @@ color: #464A5F;
     background: #66b3ff;
     color: #ffffff;
 }
-.btn.btn-dark.active{
-    background: #499EF2;
+.btn.btn-dark:active, .btn.btn-dark.active{
+    background: #499EF2  !important;
     border-radius: 10px;
+    border-color: #499EF2  !important;
 }
 
 .btn-secondary{
